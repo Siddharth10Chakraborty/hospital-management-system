@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <title>eDoc</title>
+    <style>
+      body {
+        background-image: url(img/doctors.png);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        height: 100%;
+      }
+
+      tr {
+        height: 50px; /* Adjust the height as needed */
+      }
+
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+      }
+
+      .full-height {
+        /* background: rgba(26, 26, 26, 0.548); */
+        background-attachment: fixed;
+        max-height: 100vh;
+        height: 100vh;
+      }
+      table {
+        width: 100%;
+        padding-top: 5px;
+      }
+      .heading-text {
+        margin-left: 40px;
+        color: rgb(192, 29, 29);
+        font-size: 42px;
+        font-weight: 700;
+        line-height: 42px;
+        margin-top: 15%;
+        text-align: start;
+        margin-bottom: 0;
+        transition: all 0.5s ease-in-out;
+        margin-bottom: 20px;
+      }
+
+      .sub-text2 {
+        margin-left: 40px;
+        color: rgb(32, 32, 32);
+        font-size: 23px;
+        line-height: 27px;
+        font-weight: 800;
+        text-align: start;
+        margin-top: 0;
+      }
+
+      .register-btn {
+        background-color: rgb(5, 5, 5);
+        color: #0048ff;
+      }
+
+      .edoc-logo {
+        color: rgb(181, 13, 13);
+        font-weight: bolder;
+        font-size: 50px;
+        padding-left: 20px;
+        animation: transitionIn-Y-over 0.5s;
+      }
+
+      .edoc-logo-sub {
+        color: rgba(255, 255, 255, 0.733);
+        font-size: 12px;
+      }
+
+      .nav-item {
+        color: rgb(0, 0, 0);
+        text-align: start;
+        font-size: 24px;
+        font-weight: 500;
+        animation: transitionIn-Y-over 0.5s;
+      }
+
+      .nav-item:hover {
+        color: #f0f0f0;
+      }
+
+      table {
+        animation: transitionIn-Y-bottom 0.5s;
+      }
+      #main-btn {
+        background-color: rgb(30, 30, 30);
+        margin-left: 40px;
+        border-radius: 20px;
+        height: 60px;
+        font-size: 26px;
+      }
+      #main-btn:hover {
+        background-color: rgb(255, 102, 0);
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div class="full-height">
+      <center>
+        <table border="0">
+          <tr>
+            <td width="90%">
+              <font class="edoc-logo">DOConGO. </font>
+            </td>
+            <td width="5%">
+              <a href="login.php" class="non-style-link"
+                ><p class="nav-item">LOGIN</p></a
+              >
+            </td>
+            <td width="5%">
+              <a href="signup.php" class="non-style-link"
+                ><p class="nav-item" style="padding: 20px">REGISTER</p></a
+              >
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="3">
+              <p class="heading-text" id="element">
+                DOConGO yani Doctor On the GO !
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="3">
+              <p class="sub-text2">
+                Your Health, Your Way: Instant Care, Anywhere.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="3">
+              <a href="login.php">
+                <input
+                  type="button"
+                  id="main-btn"
+                  value="Let us help you"
+                  class="login-btn btn-primary btn"
+                  style="
+                    padding-left: 25px;
+                    padding-right: 25px;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                  "
+                />
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="3"></td>
+          </tr>
+        </table>
+      </center>
+    </div>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: [
+          "^300 DOConGO yani Doctor On the GO !",
+          "Healing at Your Fingertips: Online Doctors, Real Connection.",
+          "Your Wellness, Your Time: Virtual Care that Cares.",
+          "Feel Better Faster: Where Expertise Meets Convenience.",
+        ],
+        typeSpeed: 60,
+      });
+    </script>
+  </body>
+</html>
